@@ -1,0 +1,22 @@
+---
+interface Props {
+  name: string;
+  iconUrl: string;
+}
+
+const { name, iconUrl } = Astro.props;
+---
+
+<div class="flex flex-col items-center gap-2">
+  <span class="relative inline-flex overflow-hidden rounded-full p-[1px] bg-gradient-to-br from-green-100 to-green-50 dark:from-gray-800 dark:to-gray-900">
+    <span
+      class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
+    ></span>
+    <div class="inline-flex items-center justify-center w-16 h-16 bg-white dark:bg-gray-800 rounded-full cursor-pointer backdrop-blur-3xl">
+      <img src={iconUrl} alt={name} class="w-10 h-10" />
+    </div>
+  </span>
+  <span class="text-xs text-center font-medium text-black/70 dark:text-white/70 max-w-[70px]">
+    {name}
+  </span>
+</div>
