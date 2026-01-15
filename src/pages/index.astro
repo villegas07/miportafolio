@@ -1,27 +1,26 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import Technologies from "@/components/Technologies.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
-import TitleSection from "@/components/TitleSection.astro"
+import AboutMe from "@/components/AboutMe.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import Technologies from "@/components/Technologies.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
+import TitleSection from "@/components/TitleSection.astro";
 ---
 
 <Layout
-  title="Porfolio de Brayan Villegas - Desarrollador con +4 años de experiencia"
-  description="Contrata a Brayan Villegas para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones únicas."
+  title="Porfolio de Brayan Villegas - Ingeniero de Sistemas y Desarrollador de Software"
+  description="Ingeniero de Sistemas en formación especializado en el desarrollo de aplicaciones web robustas y escalables con Next.js y Nest.js. Creando soluciones tecnológicas de alto impacto."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
-    <div class="space-y-24">
+  </main>
+  <div class="space-y-24">
     <!-- <SectionContainer id="experiencia">
       <TitleSection>
         <Briefcase class="size-8" />
@@ -54,5 +53,4 @@ import TitleSection from "@/components/TitleSection.astro"
       <AboutMe />
     </SectionContainer>
   </div>
-  </main>
 </Layout>
